@@ -1,7 +1,13 @@
-import React from "react";
+import React, { Fragment } from "react";
 import ReactDOM from "react-dom";
 import { PropsTest } from "../PropsTest";
+import RenderTest from "../RenderTest";
 
-const propsTest = <PropsTest name="rams111" />;
+const element = (
+  <Fragment>
+    <PropsTest name="rams111" />;
+    <RenderTest />;
+  </Fragment>
+);
 
-ReactDOM.render(propsTest, document.getElementById("root"));
+ReactDOM.render(element, document.getElementById("root"));
