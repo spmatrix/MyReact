@@ -1,15 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom";
+import { PropsTest } from "../PropsTest";
 
-function tick() {
-  const element = (
-    <div>
-      <h1>Rams learning react</h1>
-      <h2> it is {new Date().toLocaleTimeString()}</h2>;
-    </div>
-  );
+const propsTest = <PropsTest name="rams111" />;
 
-  ReactDOM.render(element, document.getElementById("root"));
-}
-
-setInterval(tick, 1000);
+ReactDOM.render(propsTest, document.getElementById("root"));
